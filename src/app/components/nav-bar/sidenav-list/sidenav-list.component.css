@@ -1,0 +1,37 @@
+a{
+    text-decoration: none;
+    color: white;
+ 
+}
+ 
+a:hover{
+    color: lightgray;
+}
+ 
+.nav-caption{
+    display: inline-block;
+    padding-left: 6px;
+}
+mat-nav-list{
+    background-color: white;
+    position:fixed;
+}
+.mat-menu-item:hover{
+    color:#F40000;
+    }
+span{
+    color: black;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
+}
+mat-icon{
+    color: #F40000 ;
+}
+.mat-drawer-container {
+    position: inherit;
+    z-index: 1;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    display: block;
+    overflow: hidden;
+}

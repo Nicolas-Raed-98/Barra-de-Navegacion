@@ -1,0 +1,21 @@
+.main-div mat-card{
+    padding: 0px;
+    width: 500px;
+}
+.login-form{
+    padding: 20px;
+}
+.log{
+    padding-top: 110px;
+}
+.welcome{
+    color: #000040;
+    font-size: 30px;
+    margin-left: 0px;
+    background-color: lightgray;
+}
+.mat-flat-button, .mat-raised-button, .mat-fab, .mat-mini-fab {
+    color: rgb(255 255 255);
+    background-color: #000040;
+    width: 116px;
+}

@@ -1,0 +1,59 @@
+    <mat-nav-list>
+    <mat-list-item [matMenuTriggerFor]="gral">
+        <mat-icon>brightness_low</mat-icon>
+        <a matline>General</a>
+    </mat-list-item>
+    <mat-menu #gral="matMenu">
+      <button mat-menu-item (click)="onSidenavClose()">Inicio</button>
+      <button mat-menu-item (click)="onSidenavClose()">Administrar usuarios</button>
+      <button mat-menu-item (click)="onSidenavClose()">Talonarios</button>
+      <button mat-menu-item (click)="onSidenavClose()">Copia de seguridad</button>
+      <button mat-menu-item (click)="onSidenavClose()">Salir</button>
+    </mat-menu>
+
+    <mat-list-item [matMenuTriggerFor]="master">
+        <mat-icon>engineering</mat-icon>
+        <a matline>Maestros</a>
+    </mat-list-item> 
+    <mat-menu #master="matMenu">
+      <button mat-menu-item (click)="onSidenavClose()">Marcas</button>
+      <button mat-menu-item (click)="onSidenavClose()">Tareas</button>
+      <button mat-menu-item (click)="onSidenavClose()">Motores</button>
+      <button mat-menu-item (click)="onSidenavClose()">Partes</button>
+      <button mat-menu-item (click)="onSidenavClose()">Partes-Tareas-Motores</button>
+      <button mat-menu-item (click)="onSidenavClose()">Medidas</button>
+      <button mat-menu-item (click)="onSidenavClose()">Empresas</button>
+      <button mat-menu-item (click)="onSidenavClose()">Lista de precios</button>
+      <button mat-menu-item (click)="onSidenavClose()">Repuestos</button>
+    </mat-menu>
+
+  <mat-list-item>
+    <mat-icon>person</mat-icon>
+    <a matline>Administrar personas</a>
+</mat-list-item>
+
+
+<mat-list-item [matMenuTriggerFor]="operator">
+    <mat-icon>build</mat-icon>
+    <a matline>Operaciones</a>
+</mat-list-item>
+<mat-menu #operator="matMenu">
+  <button mat-menu-item (click)="onSidenavClose()">Presupuestar</button>
+  <button mat-menu-item (click)="onSidenavClose()">Generar OT</button>
+</mat-menu>
+
+<mat-list-item [matMenuTriggerFor]="answer">
+    <mat-icon>question_answer</mat-icon>
+    <a matline>Consultas</a>
+</mat-list-item>
+<mat-menu #answer="matMenu">
+  <button mat-menu-item (click)="onSidenavClose()">Presupuestos</button>
+  <button mat-menu-item (click)="onSidenavClose()">Ficha de trabajo</button>
+  <button mat-menu-item (click)="onSidenavClose()">Ordenes de trabajo</button>
+</mat-menu>
+<mat-list-item>
+    <mat-icon>help</mat-icon>
+    <a matline>Ayuda</a>
+</mat-list-item>
+
+</mat-nav-list>

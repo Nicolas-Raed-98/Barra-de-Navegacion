@@ -1,0 +1,76 @@
+<mat-toolbar>
+  <div fxHide.gt-xs>
+      <button mat-icon-button (click)="onToggleSidenav()">
+          <mat-icon class="menu-icon">menu</mat-icon>
+      </button>
+  </div>
+  <div>
+      <a class="nombre" routerLink="/home">GRAN ESTE</a>
+  </div>
+  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+      <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+          <li [matMenuTriggerFor]="gral">
+              <a class="options" routerLink="/owner">General</a>
+           </li>
+            <button class="down">
+           <mat-icon class="drop" [matMenuTriggerFor]="gral">keyboard_arrow_down</mat-icon>  
+            </button>
+          <mat-menu #gral="matMenu">
+            <button mat-menu-item (click)="onToggleSidenav()">Inicio</button>
+            <button mat-menu-item (click)="onToggleSidenav()">Administrar usuarios</button>
+            <button mat-menu-item (click)="onToggleSidenav()">Talonarios</button>
+            <button mat-menu-item (click)="onToggleSidenav()">Copia de seguridad</button>
+            <button mat-menu-item (click)="onToggleSidenav()">Salir</button>
+          </mat-menu>
+          
+          <li [matMenuTriggerFor]="master">
+              <a class="options" routerLink="/account">Maestros</a>
+          </li>
+          <button class="down">
+            <mat-icon class="drop" [matMenuTriggerFor]="master">keyboard_arrow_down</mat-icon>  
+             </button>
+
+          <mat-menu #master="matMenu">
+            <button mat-menu-item (click)="onToggleSidenav()">Marcas</button>
+            <button mat-menu-item (click)="onToggleSidenav()">Tareas</button>
+            <button mat-menu-item (click)="onToggleSidenav()">Motores</button>
+            <button mat-menu-item (click)="onToggleSidenav()">Partes</button>
+            <button mat-menu-item (click)="onToggleSidenav()">Partes-Tareas-Motores</button>
+            <button mat-menu-item (click)="onToggleSidenav()">Medidas</button>
+            <button mat-menu-item (click)="onToggleSidenav()">Empresas</button>
+            <button mat-menu-item (click)="onToggleSidenav()">Lista de precios</button>
+            <button mat-menu-item (click)="onToggleSidenav()">Repuestos</button>
+          </mat-menu>
+
+          <li>
+            <a class="options" routerLink="/account">Personas</a>
+        </li>
+        
+        <li [matMenuTriggerFor]="operator">
+            <a class="options" routerLink="/account">Operaciones</a>
+        </li>
+        <button class="down">
+            <mat-icon class="drop" [matMenuTriggerFor]="operator">keyboard_arrow_down</mat-icon>  
+             </button>
+        <mat-menu #operator="matMenu">
+            <button mat-menu-item (click)="onToggleSidenav()">Presupuestar</button>
+            <button mat-menu-item (click)="onToggleSidenav()">Generar OT</button>
+        </mat-menu>
+        
+        <li [matMenuTriggerFor]="answer">
+            <a class="options" routerLink="/account">Consultas</a>
+        </li>
+        <button class="down">
+            <mat-icon class="drop" [matMenuTriggerFor]="answer">keyboard_arrow_down</mat-icon>  
+             </button>
+        <mat-menu #answer="matMenu">
+            <button mat-menu-item (click)="onToggleSidenav()">Presupuestos</button>
+            <button mat-menu-item (click)="onToggleSidenav()">Ficha de trabajo</button>
+            <button mat-menu-item (click)="onToggleSidenav()">Ordenes de trabajo</button>
+        </mat-menu>
+        <li>
+            <a class="options" routerLink="/account">Ayuda</a>
+        </li>
+      </ul>
+  </div>
+</mat-toolbar>
